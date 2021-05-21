@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rajath's Portfolio</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+			integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+			crossorigin="anonymous"
+		/>
+
+		<!-- Update these with your own fonts -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<header>
+			<button class="nav-toggle" aria-label="toggle navigation">
+				<span class="hamburger"></span>
+			</button>
+			<nav class="nav">
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="index.html#services" class="nav-link">My Services</a>
+					</li>
+					<li class="nav-item">
+						<a href="index.html#about" class="nav-link">About me</a>
+					</li>
+					<li class="nav-item">
+						<a href="index.html#work" class="nav-link">My Work</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="intro">
+			<h1 class="section-title section-title-intro">
+				<strong>Smart Proxy</strong>
+			</h1>
+			<p class="section-subtitle section-subtitle-intro">Thomson Reuters</p>
+			<img src="img/law.jpg" alt="" class="intro-img" />
+		</section>
+
+		<div class="portfolio-item-individual">
+			<P>
+				Westlaw is an online legal research service for lawyers and legal professionals in the United States and is a product of Thomson Reuters. 
+				In addition, it provides proprietary database services. Information resources on Westlaw include more than 40,000 databases of case law, 
+				state and federal statutes, administrative codes, newspaper and magazine articles, public records, law journals, law reviews, treatises, 
+				legal forms and other information resources.
+			</P>
+			<P>
+				Westlaw site uses various applications to fetch data from various courts (Supreme Court, appellate courts, bankruptcy court, District Courts, 
+				Federal courts), process them, and display the entire case with its history. Smart proxy being one of the applications is the initial application
+				which pulls out the data from variould courts in the United States. WestLaw publishes the court verdicts, rules or amendments passed 
+				by the courts in less than 10 minutes after it being passed at the courts. The published data will have inline links to various other related 
+				cases or articles or other necessary information.
+			</P>
+			<p>
+				Smart Praxy is one of the major application which acts as the start point for the entire westlaw.com life cycle.
+				The raw file that are generated from each court in the United States are first picked up by the Smart Proxy application. 
+				The raw file received could be in varioud formats. Each file format is handled seperately and sent for further processing 
+				in the workflow.
+			</p>
+			<p>
+				The files from various courts would be FTPd to a specific path to which the Smart Proxy would be listening to. Once a file
+				is placed in the designated path, the file would be immediately picked and processed without delays.
+			</p>
+			<p>
+				Developed a workflow to process the Spreme Court documents that required setting up a new FTP path, new implementation to
+				process the raw document, and send it for further processing before it is displayed in westlaw.com 
+			</p>
+			<p>
+				<strong><u>Responsibilities<br/></u></strong>
+					<ul>
+						<li>Developed RESTful APIs for Smart Proxy application Java, Spring, Hibernate and XSLT.</li>
+						<li>Responsible for Test Driven Development using Junit and Spock framework.</li>
+						<li>Evaluated requirements and initial mock-ups; made technology recommendations that supported optimal construction, maintenance, and performance.</li>
+						<li>Developed high-quality code, established development standards, and led by example.</li>
+					</ul>
+			</p>
+			<p>
+				<strong><u>Technologies used<br/></u></strong>
+				Java, Spring, REST Services, XSLT.
+			</p>
+		</div>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<!-- replace with your own email address -->
+			<a href="mailto:rajathmuthappak@gmail.com" class="footer-link"
+				>rajathmuthappak@gmail.com</a
+			>
+			<ul class="social-list">
+				<li class="social-list-item">
+					<a class="social-list-link" href="https://github.com">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</li>
+				<li class="social-list-item">
+					<a class="social-list-link" href="https://github.com">
+						<i class="fab fa-github"></i>
+					</a>
+				</li>
+			</ul>
+		</footer>
+
+		<script src="js/index.js"></script>
+	</body>
+</html>

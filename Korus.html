@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rajath's Portfolio</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+			integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+			crossorigin="anonymous"
+		/>
+
+		<!-- Update these with your own fonts -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<header>
+			<button class="nav-toggle" aria-label="toggle navigation">
+				<span class="hamburger"></span>
+			</button>
+			<nav class="nav">
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="index.html#services" class="nav-link">My Services</a>
+					</li>
+					<li class="nav-item">
+						<a href="index.html#about" class="nav-link">About me</a>
+					</li>
+					<li class="nav-item">
+						<a href="index.html#work" class="nav-link">My Work</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="intro">
+			<h1 class="section-title section-title-intro">
+				Fresenius Medical<br/> Care - KORUS
+			</h1>
+			<p class="section-subtitle section-subtitle-intro">NTT DATA</p>
+			<img src="img/FMC.jpg" alt="" class="intro-img" />
+		</section>
+
+		<div class="portfolio-item-individual">
+			<p>
+				Spectra Laboratories is one of the leading provider of renal-specific testing services serving 
+				thousands of dialysis clinicians and their patients worldwide. Spectra is equipped to provide comprehensive 
+				testing, analysis and reporting with the highest level of innovation and services.
+			</p>
+			<P>
+				Korus is Spectra’s fully integrated ordering and reporting web-based application. Korus is used by the 
+				facilities (clinics) to order tests and generate the test reports. Few clinics were directly ordering 
+				and generating reports using KORUS but few used to create orders using their own ordering applications 
+				which would generate a HL7 message which would be sent across the shared network to the KORUS application 
+				using the ensemble HL7 messaging interface. Ensemble would process the HL7 message and automatically place 
+				order in the KORUS application without human interventions. Later the facilities could view the generated 
+				test reports using KORUS. 
+			</P>
+			<p>
+				<strong><u>Responsibilities<br/></u></strong>
+					<ul>
+						<li>Developed and enhanced the messaging interface using Ensemble technologies.</li>
+						<li>Developed an application that would allow the customers to easily configure Test 
+							facilities and message formats without the help of a backend developer.</li>
+						<li>Led the product life cycle of the fully integrated ordering and reporting web-based 
+							application called Korus from development stage to deployment and commissioning.</li>
+						</ul>
+			</p>
+			<p>
+				<strong><u>Technologies used<br/></u></strong>
+				Java, Spring, Hiberante, REST Services, Ensemble, Ext JS, Oracle SQL. 
+			</p>
+		</div>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<!-- replace with your own email address -->
+			<a href="mailto:rajathmuthappak@gmail.com" class="footer-link"
+				>rajathmuthappak@gmail.com</a
+			>
+			<ul class="social-list">
+				<li class="social-list-item">
+					<a class="social-list-link" href="https://github.com">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</li>
+				<li class="social-list-item">
+					<a class="social-list-link" href="https://github.com">
+						<i class="fab fa-github"></i>
+					</a>
+				</li>
+			</ul>
+		</footer>
+
+		<script src="js/index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rajath's Portfolio</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+			integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+			crossorigin="anonymous"
+		/>
+
+		<!-- Update these with your own fonts -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<header>
+			<button class="nav-toggle" aria-label="toggle navigation">
+				<span class="hamburger"></span>
+			</button>
+			<nav class="nav">
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="index.html#services" class="nav-link">My Services</a>
+					</li>
+					<li class="nav-item">
+						<a href="index.html#about" class="nav-link">About me</a>
+					</li>
+					<li class="nav-item">
+						<a href="index.html#work" class="nav-link">My Work</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="intro">
+			<h1 class="section-title section-title-intro">
+				Centralized Directory<br/>Management System
+			</h1>
+			<p class="section-subtitle section-subtitle-intro">MS - University Of Texas at Arlington</p>
+			<img src="img/DS.jpg" alt="" class="intro-img" />
+		</section>
+
+		<div class="portfolio-item-individual">
+			<p>
+				Objectives<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Exposure to sequence-dependent operations.<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Further experience with thread management.<br/>
+			</p>
+			<p>
+                Developed a centralized directory management system consisting of a server and multiple client processes with the server
+                being capable of handling all the clients simultaneously and display the names of the connected clients in real time.
+                Upon connection the server would check if a directoy exists for the particular client or creates one if its not existing and 
+                would navigate the client to the respective home directory. 
+            </p>
+            <p>
+                Inside the home directory, the client will have the ability to <br/>
+                • Create directories;<br/>
+                • Delete directories;<br/>
+                • Move directories;<br/>
+                • Rename directories; and,<br/>
+                • List the contents of directories.<br/>
+            </p>
+            <p>
+                The client are given the option of locally synchronizing any home directory available at the server. 
+                A user may select one or more home directories of which to create a local copy. Once a copy of the remote directory 
+                has been created locally, any changes to the server-based directory would be reflected in the local copy.
+                Any synchronized directory may also be desynchronized. Upon desynchronization, the copy of the directory would be removed from the local system.
+            </p>
+            <p>
+                The server maintains a log of all directory operations. This log will be persistent and presented on 
+                the server’s GUI. The user will be provided with the option to ‘Undo’ any logged operation at the server. 
+                When a user chooses to ‘Undo’ an operation, that operation would be rolled back across every applicable directory in the distributed system.
+            </p>
+			<p>
+				<strong><u>Technologies used<br/></u></strong>
+				Java, Swings, Java threads, Oracle SQL.
+			</p>			
+		</div>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<!-- replace with your own email address -->
+			<a href="mailto:rajathmuthappak@gmail.com" class="footer-link"
+				>rajathmuthappak@gmail.com</a
+			>
+			<ul class="social-list">
+				<li class="social-list-item">
+					<a class="social-list-link" href="https://github.com">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</li>
+				<li class="social-list-item">
+					<a class="social-list-link" href="https://github.com">
+						<i class="fab fa-github"></i>
+					</a>
+				</li>
+			</ul>
+		</footer>
+
+		<script src="js/index.js"></script>
+	</body>
+</html>

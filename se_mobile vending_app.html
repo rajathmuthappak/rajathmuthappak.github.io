@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rajath's Portfolio</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+			integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+			crossorigin="anonymous"
+		/>
+
+		<!-- Update these with your own fonts -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<header>
+			<button class="nav-toggle" aria-label="toggle navigation">
+				<span class="hamburger"></span>
+			</button>
+			<nav class="nav">
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="index.html#services" class="nav-link">My Services</a>
+					</li>
+					<li class="nav-item">
+						<a href="index.html#about" class="nav-link">About me</a>
+					</li>
+					<li class="nav-item">
+						<a href="index.html#work" class="nav-link">My Work</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="intro">
+			<h1 class="section-title section-title-intro">
+				UTA Mobile <br/> Vending System
+			</h1>
+			<p class="section-subtitle section-subtitle-intro">MS - University Of Texas at Arlington</p>
+			<img src="img/se_mobile vending_app.jpg" alt="" class="intro-img" />
+		</section>
+
+		<div class="portfolio-item-individual">
+			<p>
+                Developed a Android application that is used to manage mobile food vending locations, inventory management and sell products to users.
+                The application had the capabilites to searach food trucks based on the user location and display the available items available 
+                at the location in real time. The application had the capability to dispaly the duration and ent time of the food truck at a particular location. 
+            </p>
+            <p>
+                The application had 3 users and privilages they had in the application is as below, <br/>
+                1.	Vending manager <br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.	creates own profile<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b.	performs a vehicle search<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c.	views a vehicle inventory (current day only)<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d.	determines available vending vehicle for next day (returns a search of all vending vehicles that are available the next day)<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.	views details of a specific vehicle operator<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f.	assigns a location to a vending vehicle for the next day<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;g.	assigns an operator to a vending vehicle (assigned the entire day)<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h.	updates his own profile<br/>
+                2.	Vending user (student, faculty, staff, non-student)<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.	creates own profile<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b.	performs a vehicle search<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c.	views inventory of a specific vehicle<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d.	purchases item(s) (item type, quantity and cost are given) - this &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;can be performed both remotely and at the vehicle<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.	updates his own profile<br/>
+                3.	Vending Operator<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.	creates own profile<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b.	views inventory of his vehicle<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c.	views today's schedule and location<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d.	updates his own profile<br/>
+
+            </p>
+            <p>
+                The application allows the vending manager to assign all available vending vehicles late afternoon for the next day by location. Each location has an assigned 
+                slot starting at 8am with the next available slot determined by the duration for that location. All users have the standard functions like register, login, logout. 
+                Each system user registers and for simplicity selects their role during registration. 
+            </p>
+			<p>
+				<strong><u>Technologies used<br/></u></strong>
+				Android Studio, Android, Java, and SQLite.
+			</p>			
+		</div>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<!-- replace with your own email address -->
+			<a href="mailto:rajathmuthappak@gmail.com" class="footer-link"
+				>rajathmuthappak@gmail.com</a
+			>
+			<ul class="social-list">
+				<li class="social-list-item">
+					<a class="social-list-link" href="https://github.com">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</li>
+				<li class="social-list-item">
+					<a class="social-list-link" href="https://github.com">
+						<i class="fab fa-github"></i>
+					</a>
+				</li>
+			</ul>
+		</footer>
+
+		<script src="js/index.js"></script>
+	</body>
+</html>

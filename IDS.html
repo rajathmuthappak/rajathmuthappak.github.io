@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rajath's Portfolio</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+			integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+			crossorigin="anonymous"
+		/>
+
+		<!-- Update these with your own fonts -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<header>
+			<button class="nav-toggle" aria-label="toggle navigation">
+				<span class="hamburger"></span>
+			</button>
+			<nav class="nav">
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="index.html#services" class="nav-link">My Services</a>
+					</li>
+					<li class="nav-item">
+						<a href="index.html#about" class="nav-link">About me</a>
+					</li>
+					<li class="nav-item">
+						<a href="index.html#work" class="nav-link">My Work</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="intro">
+			<h1 class="section-title section-title-intro">
+				Intrusion Detection <br/>System 
+			</h1>
+			<p class="section-subtitle section-subtitle-intro"><strong>K.S. Institute Of Technology</strong></p>
+			<img src="img/IDS.jpg" alt="" class="intro-img" />
+		</section>
+
+		<div class="portfolio-item-individual">
+			<p>
+				This project aims at the timely discovery of any activity that jeopardizes the integrity, availability, 
+				or the confidentiality of an IT system. It is often approached as a classification task, which aims at spotting the 
+				appearance of either a known pattern of system misuse or an anomaly in system (or application) behavior. 
+			</p>
+			<p>
+				Based on the activity it observes, an intrusion detection system (IDS) may be either of three types: host, network, 
+				or application. A host IDS is usually set to audit the functionality of the underlying operating system, as it executes system calls, 
+				but can also be set to watch critical resources.
+			</p>
+			<p>
+				Based on the classification scheme, an IDS is either misuse or anomaly. Misuse detection takes a collection of signatures of 
+				previous intrusions or known vulnerabilities, and applies it to detect a new occurrence.
+				While accurate, misuse IDSs is often unable to detect variants of known attacks, or attacks that exploit vulnerabilities 
+				recently discovered. To get around this problem, an anomaly IDS counts on a characterization of ordinary activity and uses it to distinguish abnormal one.
+			</p>
+			<p>
+				More often than not, commercial IDSs are bypassed, either by a zero-day attack or by an unseen variant of an existing attack, 
+				called a mimicry attack. Then, it is necessary to analyze the vandalized IT system in order to determine how the intruder gained access 
+				to it and what he did with it afterward. This analysis usually reveals that, 
+				to break into the system, the attacker has run a small program, called an exploit, which has taken advantage of system vulnerability.
+			</p>
+			<p>
+				<u>Algorithm</u><br>
+				Step 1: Select the number of layers, n, for the complete
+				system.<br>
+				Step 2: Separately perform features selection for each layer.<br>
+				Step 3: Train a separate model with CRFs for each layer
+				using the features selected from Step 2.<br>
+				Step 4: Plug in the trained models sequentially such that
+				only the connections labeled as normal are passed
+				to the next layer.<br>
+				Step 5: For each (next) test instance perform Steps 6
+				through 9.<br>
+				Step 6: Test the instance and label it either as attack or
+				normal.<br>
+				Step 7: If the instance is labeled as attack, block it and
+				identify it as an attack represented by the layer
+				name at which it is detected and go to Step 5. Else
+				pass the sequence to the next layer.<br>
+				Step 8: If the current layer is not the last layer in the system,
+				test the instance and go to Step 7. Else go to Step 9.<br>
+				Step 9: Test the instance and label it either as normal or as
+				an attack. If the instance is labeled as an attack,
+				block it and identify
+			</p>
+			<p>
+				<strong><u>Technologies used<br/></u></strong>
+				Java, SQL, Swings. 
+			</p>
+
+		</div>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<!-- replace with your own email address -->
+			<a href="mailto:rajathmuthappak@gmail.com" class="footer-link"
+				>rajathmuthappak@gmail.com</a
+			>
+			<ul class="social-list">
+				<li class="social-list-item">
+					<a class="social-list-link" href="https://github.com">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</li>
+				<li class="social-list-item">
+					<a class="social-list-link" href="https://github.com">
+						<i class="fab fa-github"></i>
+					</a>
+				</li>
+			</ul>
+		</footer>
+
+		<script src="js/index.js"></script>
+	</body>
+</html>
